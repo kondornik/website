@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
     
     <title>sensebot Search</title>
@@ -17,14 +17,19 @@
     </header>
 
     <div class="mainContent">
-      <button type="button">SenseBot</button>
-      <button type="button">Bing</button>
-      <input type="text" name="search" value="What are you looking for?" placeholder="What are you looking for?">
-      <button type="button">Search</button>
-
+      
+      <div class="engines">
+        <button type="button">SenseBot</button>
+        <button type="button" class="active">Bing</button>
+      </div>
+      <div class="searchField">
+        <input type="text" name="search" value="What are you looking for?" placeholder="What are you looking for?">
+        <button type="button" class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </div>
       <input type="checkbox" name="vehicle" value="Bike">search news only
+    
     <nav>
-      <ol>
+      <ol class="languages">
         <li>English</li>
         <li>French</li>
         <li>German</li>

@@ -6,13 +6,100 @@ body {
 header{
     text-align: center;
 }
+header p{
+    color:#42501b;
+    font-size: 1.5em;
+    margin: 0;
+}
 h1{
     font-size: 4em;
     margin: 0;
+    font-style: italic;
 }
 .orange{
     color: #ef5411;
 }
 .green{
     color:#9fbf2c;
+}
+
+/*_____________________________________
+                         MAIN CONTENT*/
+
+.mainContent{
+    text-align: center;
+    margin-top: 2em;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.engines{
+    display: block;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    /*width: 600px;*/
+    width: 100%;
+}
+.engines button{
+    display: block;
+    float: left;
+    height: 45px;
+    color: white;
+    background-color:black;
+    border: none;
+    width: 50%;
+    background-color: #9fbf2c;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 50%;
+}
+.engines button.active{
+    background-color: #64950e;
+}
+
+
+.searchField{
+    clear: both;
+    width: 100%;
+}
+.searchField input{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: none;
+    height: 4em;
+    padding-left: 30px;
+    font-size: 1.2em;
+    color: #42501b;
+    border: 1px solid #c9d0bc;
+}
+
+/*Search button*/
+.searchField{
+    position: relative;
+}
+button.btn-search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding:1.7em;
+}
+button.btn-search .fa-search{
+    font-size: 3em;
+}
+
+/*Languages navigation*/
+ol.languages{
+
+}
+
+/* all navigation lists */
+nav ol li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
 }

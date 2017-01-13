@@ -36,7 +36,7 @@ header{
 /*_____________________________________
                          MAIN CONTENT*/
 
-.mainContent{
+.mainContent, footer{
     text-align: center;
     margin-top: 2em;
     width: 700px;
@@ -94,10 +94,10 @@ header{
         border: none;
         background: none;
         cursor: pointer;
-        padding:1.7em;
+        padding:1.7em 3em;
         .fa-search{
             font-size: 3em;
-            color: $greenActive;
+            color: $orange;
         }
     }    
 }
@@ -154,3 +154,11 @@ nav
     
 } 
 
+/*footer*/
+
+footer{
+    .copyright{
+        font-size: 0.8em;
+        color: transparentize($textGreenDark, 0.6);
+    }
+}

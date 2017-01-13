@@ -22,7 +22,7 @@ header {
 
 /*_____________________________________
                          MAIN CONTENT*/
-.mainContent {
+.mainContent, footer {
   text-align: center;
   margin-top: 2em;
   width: 700px;
@@ -73,10 +73,10 @@ header {
     border: none;
     background: none;
     cursor: pointer;
-    padding: 1.7em; }
+    padding: 1.7em 3em; }
     .searchField button.btn-search .fa-search {
       font-size: 3em;
-      color: #64950e; }
+      color: #ef5411; }
 
 /* news only */
 .newsOnly {
@@ -111,5 +111,10 @@ nav {
       font-size: 0.9em; }
       nav ol.common li a:hover {
         color: rgba(66, 80, 27, 0.3); }
+
+/*footer*/
+footer .copyright {
+  font-size: 0.8em;
+  color: rgba(66, 80, 27, 0.4); }
 
 /*# sourceMappingURL=style.css.map */

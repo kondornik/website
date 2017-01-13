@@ -1,0 +1,156 @@
+
+//colors:
+$orange:#ef5411;
+$green:#9fbf2c;
+$greenActive:#64950e;
+$textGreenDark: #42501b;
+$textGreenLight:#727a5e;
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+header{
+    text-align: center;
+    p{
+        color:#42501b;
+        font-size: 1.5em;
+        margin: 0;
+    }
+    h1{
+        font-size: 4em;
+        margin: 0;
+        font-style: italic;
+    }
+}
+
+.orange{
+    color: $orange;
+}
+.green{
+    color:$green;
+}
+
+/*_____________________________________
+                         MAIN CONTENT*/
+
+.mainContent{
+    text-align: center;
+    margin-top: 2em;
+    width: 700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.engines{
+    display: block;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    /*width: 600px;*/
+    width: 100%;
+    button{
+        display: block;
+        float: left;
+        height: 45px;
+        color: white;
+        background-color:black;
+        border: none;
+        width: 50%;
+        background-color: $green;
+        font-size: 1.2em;
+        cursor: pointer;
+        width: 50%;
+        &.active{
+            background-color: $greenActive;
+        }
+    }
+}
+
+.searchField{
+    clear: both;
+    width: 100%;
+    position: relative;
+    input{
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: none;
+        height: 4em;
+        padding-left: 30px;
+        font-size: 1.2em;
+        color: #42501b;
+        border: 1px solid #c9d0bc;
+
+        &::-webkit-input-placeholder{
+            color:$textGreenLight;
+        }
+    }
+    /*Search button*/
+    button.btn-search{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        padding:1.7em;
+        .fa-search{
+            font-size: 3em;
+            color: $greenActive;
+        }
+    }    
+}
+
+/* news only */
+.newsOnly{
+    display: block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    label{
+        color:$textGreenDark;
+    }
+}
+
+/* all navigation lists */
+nav
+{
+    clear: both;
+    ol{
+        li{
+            list-style: none;
+            display: inline-block;
+        }
+        a{
+            display: block;
+            padding: 5px 10px;
+            color:$textGreenDark;
+            text-decoration: none;
+            &:hover{
+                color:transparentize($textGreenDark, 0.5);
+                
+            }
+        }
+        &.languages{
+            li{
+                border-right: 1px solid $green;
+                &:last-child{
+                    border-right: none;
+                }
+            }
+        }
+        &.common{
+            margin-top: 70px;
+            li a{
+                color: transparentize($textGreenDark, 0.5);
+                font-size: 0.9em;
+                &:hover{
+                    color: transparentize($textGreenDark, 0.7);
+                }
+            }
+        }
+    }
+    
+} 
+

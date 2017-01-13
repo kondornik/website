@@ -1,105 +1,115 @@
 body {
-    background-color: #f2f2f2;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-header{
-    text-align: center;
-}
-header p{
-    color:#42501b;
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px; }
+
+header {
+  text-align: center; }
+  header p {
+    color: #42501b;
     font-size: 1.5em;
-    margin: 0;
-}
-h1{
+    margin: 0; }
+  header h1 {
     font-size: 4em;
     margin: 0;
-    font-style: italic;
-}
-.orange{
-    color: #ef5411;
-}
-.green{
-    color:#9fbf2c;
-}
+    font-style: italic; }
+
+.orange {
+  color: #ef5411; }
+
+.green {
+  color: #9fbf2c; }
 
 /*_____________________________________
                          MAIN CONTENT*/
+.mainContent {
+  text-align: center;
+  margin-top: 2em;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto; }
 
-.mainContent{
-    text-align: center;
-    margin-top: 2em;
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.engines{
-    display: block;
-    /*margin-left: auto;
-    margin-right: auto;*/
-    /*width: 600px;*/
-    width: 100%;
-}
-.engines button{
+.engines {
+  display: block;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  /*width: 600px;*/
+  width: 100%; }
+  .engines button {
     display: block;
     float: left;
     height: 45px;
     color: white;
-    background-color:black;
+    background-color: black;
     border: none;
     width: 50%;
     background-color: #9fbf2c;
     font-size: 1.2em;
     cursor: pointer;
-    width: 50%;
-}
-.engines button.active{
-    background-color: #64950e;
-}
+    width: 50%; }
+    .engines button.active {
+      background-color: #64950e; }
 
-
-.searchField{
-    clear: both;
-    width: 100%;
-}
-.searchField input{
+.searchField {
+  clear: both;
+  width: 100%;
+  position: relative;
+  /*Search button*/ }
+  .searchField input {
     width: 100%;
     box-sizing: border-box;
-    border: none;
     box-shadow: none;
     height: 4em;
     padding-left: 30px;
     font-size: 1.2em;
     color: #42501b;
-    border: 1px solid #c9d0bc;
-}
-
-/*Search button*/
-.searchField{
-    position: relative;
-}
-button.btn-search{
+    border: 1px solid #c9d0bc; }
+    .searchField input::-webkit-input-placeholder {
+      color: #727a5e; }
+  .searchField button.btn-search {
     position: absolute;
     top: 0;
     right: 0;
     border: none;
     background: none;
     cursor: pointer;
-    padding:1.7em;
-}
-button.btn-search .fa-search{
-    font-size: 3em;
-}
+    padding: 1.7em; }
+    .searchField button.btn-search .fa-search {
+      font-size: 3em;
+      color: #64950e; }
 
-/*Languages navigation*/
-ol.languages{
-
-}
+/* news only */
+.newsOnly {
+  display: block;
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px; }
+  .newsOnly label {
+    color: #42501b; }
 
 /* all navigation lists */
-nav ol li{
+nav {
+  clear: both; }
+  nav ol li {
     list-style: none;
-    display: inline-block;
+    display: inline-block; }
+  nav ol a {
+    display: block;
     padding: 5px 10px;
-}
+    color: #42501b;
+    text-decoration: none; }
+    nav ol a:hover {
+      color: rgba(66, 80, 27, 0.5); }
+  nav ol.languages li {
+    border-right: 1px solid #9fbf2c; }
+    nav ol.languages li:last-child {
+      border-right: none; }
+  nav ol.common {
+    margin-top: 70px; }
+    nav ol.common li a {
+      color: rgba(66, 80, 27, 0.5);
+      font-size: 0.9em; }
+      nav ol.common li a:hover {
+        color: rgba(66, 80, 27, 0.3); }
+
+/*# sourceMappingURL=style.css.map */

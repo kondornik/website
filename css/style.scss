@@ -79,8 +79,8 @@ header{
         height: 4em;
         padding-left: 30px;
         font-size: 1.2em;
-        color: #42501b;
-        border: 1px solid #c9d0bc;
+        color: $textGreenDark;
+        border: 1px solid transparentize($textGreenLight, 0.8);
 
         &::-webkit-input-placeholder{
             color:$textGreenLight;

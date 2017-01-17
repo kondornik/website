@@ -63,7 +63,7 @@ header {
     padding-left: 30px;
     font-size: 1.2em;
     color: #42501b;
-    border: 1px solid #c9d0bc; }
+    border: 1px solid rgba(114, 122, 94, 0.2); }
     .searchField input::-webkit-input-placeholder {
       color: #727a5e; }
   .searchField button.btn-search {

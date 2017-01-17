@@ -12,7 +12,8 @@ header {
   header h1 {
     font-size: 4em;
     margin: 0;
-    font-style: italic; }
+    font-style: italic;
+    font-weight: bold; }
 
 .orange {
   color: #ef5411; }
@@ -111,6 +112,37 @@ nav {
       font-size: 0.9em; }
       nav ol.common li a:hover {
         color: rgba(66, 80, 27, 0.3); }
+
+/*search results page*/
+.sr-summary {
+  text-align: left; }
+  .sr-summary header {
+    text-align: left;
+    border-top: 1px solid rgba(114, 122, 94, 0.2); }
+    .sr-summary header h2 {
+      font-size: 1.5em;
+      line-height: 0.5em;
+      font-weight: normal;
+      color: #999;
+      float: left; }
+      .sr-summary header h2 span {
+        font-style: italic;
+        font-size: 0.8em;
+        color: #666; }
+    .sr-summary header .actions {
+      margin-top: 0.5em;
+      float: right;
+      clear: right; }
+    .sr-summary header:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .sr-summary .sr-summary-body {
+    margin-top: 2em; }
+    .sr-summary .sr-summary-body article {
+      clear: both;
+      margin-top: 2em;
+      margin-bottom: 2.5em; }
 
 /*footer*/
 footer .copyright {

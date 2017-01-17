@@ -5,6 +5,8 @@ $green:#9fbf2c;
 $greenActive:#64950e;
 $textGreenDark: #42501b;
 $textGreenLight:#727a5e;
+$textGrayDark: #666;
+$textGrayLight: #999;
 
 body {
     background-color: #f2f2f2;
@@ -23,6 +25,7 @@ header{
         font-size: 4em;
         margin: 0;
         font-style: italic;
+        font-weight: bold;
     }
 }
 
@@ -154,8 +157,50 @@ nav
     
 } 
 
-/*footer*/
+/*search results page*/
+.sr-summary{
+    text-align: left;
+    header{
+        text-align: left;
+        border-top: 1px solid transparentize($textGreenLight, 0.8);
+            
+        h2{
+            font-size: 1.5em;
+            line-height: 0.5em;
+            font-weight: normal;
+            color: $textGrayLight;
+            float: left;
+            span{
+                font-style: italic;
+                font-size: 0.8em;
+                color: $textGrayDark;
+            }
+        }
+        .actions{
+            margin-top:0.5em;
+            float: right;
+            clear: right;
+        }
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
 
+    .sr-summary-body{
+        margin-top:2em;
+        article{
+            clear:both;
+            margin-top:2em;
+            margin-bottom:2.5em;
+        }
+    }
+    
+    
+}
+
+/*footer*/
 footer{
     .copyright{
         font-size: 0.8em;

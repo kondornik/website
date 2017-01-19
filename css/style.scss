@@ -48,7 +48,6 @@ header{
                          MAIN CONTENT*/
 
 .mainContent{
-    // text-align: center;
     margin-top: 2em;
 }
 
@@ -191,6 +190,33 @@ nav
         clear: both;
     }
 }
+
+@media (max-width: 768px) { 
+    .word-cloud{
+        padding:5px;
+        ul li{ 
+            padding:5px;
+            a{
+                font-size: 15px;
+                &.xs{
+                    font-size: 0.7em;
+                }
+                &.sm{
+                    font-size: 1.2em;
+                }
+                &.md{
+                    font-size: 1.7em;
+                }
+                &.lg{
+                    font-size: 2.0em;
+                }
+            }
+        }
+    }
+    
+     
+}
+
 .actions{
     margin-top: 0.5em;
     float: right;
@@ -204,6 +230,10 @@ nav
     a{
         font-size: 1.5em;
         display: inline-block;
+        color: $textGrayLight;
+        &:hover{
+            color:$textGrayDark;
+        }
     }
     .num-of-results{
         display: inline-block;
@@ -222,9 +252,27 @@ nav
     }   
 }
 
+@media (max-width: 768px) { 
+    .actions{
+        float: left;
+        display: block;
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+    .sr-summary h2{
+        clear: both;
+        display: block;
+    }
+}
+
+
 .sr-summary{
     text-align: left;
     padding: 0 1em;
+    display: inline-block;
     header{
         text-align: left;
         margin-top:0.5em;

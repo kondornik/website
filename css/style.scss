@@ -15,7 +15,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: $baseFontSize;
 }
-
+a{
+    color: $green;
+    &:hover{
+        color: $greenActive;
+    }
+}
 header{
     text-align: center;
     margin-top: 2em;
@@ -186,6 +191,36 @@ nav
         clear: both;
     }
 }
+.actions{
+    margin-top: 0.5em;
+    float: right;
+    .separator{
+        display: inline-block;
+        width: 1px;
+        height:20px;
+        border-left: 1px solid #CCC;
+        margin:0 30px;
+    }
+    a{
+        font-size: 1.5em;
+        display: inline-block;
+    }
+    .num-of-results{
+        display: inline-block;
+        input[type="text"]{
+            width: 50px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #CCC;
+            padding: 0 10px;
+            font-size: 1.5em;
+            color:$textGrayLight;
+            &:hover{
+                color:$textGrayDark;
+            }
+        }
+    }   
+}
 
 .sr-summary{
     text-align: left;
@@ -204,11 +239,6 @@ nav
                 font-size: 0.8em;
                 color: $textGrayDark;
             }
-        }
-        .actions{
-            margin-top:0.5em;
-            float: right;
-            clear: right;
         }
         &:after {
             content: "";

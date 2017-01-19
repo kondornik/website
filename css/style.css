@@ -3,6 +3,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px; }
 
+a {
+  color: #9fbf2c; }
+  a:hover {
+    color: #64950e; }
+
 header {
   text-align: center;
   margin-top: 2em; }
@@ -135,6 +140,31 @@ nav {
     display: table;
     clear: both; }
 
+.actions {
+  margin-top: 0.5em;
+  float: right; }
+  .actions .separator {
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    border-left: 1px solid #CCC;
+    margin: 0 30px; }
+  .actions a {
+    font-size: 1.5em;
+    display: inline-block; }
+  .actions .num-of-results {
+    display: inline-block; }
+    .actions .num-of-results input[type="text"] {
+      width: 50px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #CCC;
+      padding: 0 10px;
+      font-size: 1.5em;
+      color: #999; }
+      .actions .num-of-results input[type="text"]:hover {
+        color: #666; }
+
 .sr-summary {
   text-align: left;
   padding: 0 1em; }
@@ -151,10 +181,6 @@ nav {
         font-style: italic;
         font-size: 0.8em;
         color: #666; }
-    .sr-summary header .actions {
-      margin-top: 0.5em;
-      float: right;
-      clear: right; }
     .sr-summary header:after {
       content: "";
       display: table;

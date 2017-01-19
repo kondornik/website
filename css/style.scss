@@ -8,14 +8,17 @@ $textGreenLight:#727a5e;
 $textGrayDark: #666;
 $textGrayLight: #999;
 
+$baseFontSize: 15px;
+
 body {
     background-color: #f2f2f2;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: $baseFontSize;
 }
 
 header{
     text-align: center;
+    margin-top: 2em;
     p{
         color:#42501b;
         font-size: 1.5em;
@@ -39,19 +42,13 @@ header{
 /*_____________________________________
                          MAIN CONTENT*/
 
-.mainContent, footer{
+.mainContent{
     text-align: center;
     margin-top: 2em;
-    width: 700px;
-    margin-left:auto;
-    margin-right:auto;
 }
 
 .engines{
     display: block;
-    /*margin-left: auto;
-    margin-right: auto;*/
-    /*width: 600px;*/
     width: 100%;
     button{
         display: block;
@@ -97,9 +94,9 @@ header{
         border: none;
         background: none;
         cursor: pointer;
-        padding:1.7em 3em;
+        padding:1.2em 2.2em;
         .fa-search{
-            font-size: 3em;
+            font-size: 2.5em;
             color: $orange;
         }
     }    
@@ -107,13 +104,7 @@ header{
 
 /* news only */
 .newsOnly{
-    display: block;
-    float: right;
-    margin-top: 10px;
-    margin-right: 20px;
-    label{
         color:$textGreenDark;
-    }
 }
 
 /* all navigation lists */
@@ -121,8 +112,12 @@ nav
 {
     clear: both;
     ol{
+        margin:0;
+        padding:0;
         li{
             list-style: none;
+            margin: 0;
+            padding: 0;
             display: inline-block;
         }
         a{
@@ -202,8 +197,17 @@ nav
 
 /*footer*/
 footer{
+    clear: both;
+    text-align: center;
+    background: transparentize(#EBEBEB, 0.1);
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 2vh;
+    display: block;
+    position: absolute;
     .copyright{
         font-size: 0.8em;
         color: transparentize($textGreenDark, 0.6);
     }
+     
 }

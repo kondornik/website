@@ -4,7 +4,8 @@ body {
   font-size: 15px; }
 
 header {
-  text-align: center; }
+  text-align: center;
+  margin-top: 2em; }
   header p {
     color: #42501b;
     font-size: 1.5em;
@@ -23,18 +24,12 @@ header {
 
 /*_____________________________________
                          MAIN CONTENT*/
-.mainContent, footer {
+.mainContent {
   text-align: center;
-  margin-top: 2em;
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-top: 2em; }
 
 .engines {
   display: block;
-  /*margin-left: auto;
-  margin-right: auto;*/
-  /*width: 600px;*/
   width: 100%; }
   .engines button {
     display: block;
@@ -74,44 +69,44 @@ header {
     border: none;
     background: none;
     cursor: pointer;
-    padding: 1.7em 3em; }
+    padding: 1.2em 2.2em; }
     .searchField button.btn-search .fa-search {
-      font-size: 3em;
+      font-size: 2.5em;
       color: #ef5411; }
 
 /* news only */
 .newsOnly {
-  display: block;
-  float: right;
-  margin-top: 10px;
-  margin-right: 20px; }
-  .newsOnly label {
-    color: #42501b; }
+  color: #42501b; }
 
 /* all navigation lists */
 nav {
   clear: both; }
-  nav ol li {
-    list-style: none;
-    display: inline-block; }
-  nav ol a {
-    display: block;
-    padding: 5px 10px;
-    color: #42501b;
-    text-decoration: none; }
-    nav ol a:hover {
-      color: rgba(66, 80, 27, 0.5); }
-  nav ol.languages li {
-    border-right: 1px solid #9fbf2c; }
-    nav ol.languages li:last-child {
-      border-right: none; }
-  nav ol.common {
-    margin-top: 70px; }
-    nav ol.common li a {
-      color: rgba(66, 80, 27, 0.5);
-      font-size: 0.9em; }
-      nav ol.common li a:hover {
-        color: rgba(66, 80, 27, 0.3); }
+  nav ol {
+    margin: 0;
+    padding: 0; }
+    nav ol li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block; }
+    nav ol a {
+      display: block;
+      padding: 5px 10px;
+      color: #42501b;
+      text-decoration: none; }
+      nav ol a:hover {
+        color: rgba(66, 80, 27, 0.5); }
+    nav ol.languages li {
+      border-right: 1px solid #9fbf2c; }
+      nav ol.languages li:last-child {
+        border-right: none; }
+    nav ol.common {
+      margin-top: 70px; }
+      nav ol.common li a {
+        color: rgba(66, 80, 27, 0.5);
+        font-size: 0.9em; }
+        nav ol.common li a:hover {
+          color: rgba(66, 80, 27, 0.3); }
 
 /*search results page*/
 .sr-summary {
@@ -145,8 +140,17 @@ nav {
       margin-bottom: 2.5em; }
 
 /*footer*/
-footer .copyright {
-  font-size: 0.8em;
-  color: rgba(66, 80, 27, 0.4); }
+footer {
+  clear: both;
+  text-align: center;
+  background: rgba(235, 235, 235, 0.9);
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 2vh;
+  display: block;
+  position: absolute; }
+  footer .copyright {
+    font-size: 0.8em;
+    color: rgba(66, 80, 27, 0.4); }
 
 /*# sourceMappingURL=style.css.map */

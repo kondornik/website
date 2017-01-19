@@ -140,7 +140,7 @@ nav {
       margin-bottom: 2.5em; }
 
 /*footer*/
-footer {
+footer.site-footer {
   clear: both;
   text-align: center;
   background: rgba(235, 235, 235, 0.9);
@@ -149,7 +149,7 @@ footer {
   padding-bottom: 2vh;
   display: block;
   position: absolute; }
-  footer .copyright {
+  footer.site-footer .copyright {
     font-size: 0.8em;
     color: rgba(66, 80, 27, 0.4); }
 

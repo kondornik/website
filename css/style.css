@@ -28,6 +28,8 @@ header {
   text-align: center;
   margin-top: 2em; }
 
+/*__________________________________________
+                         CHOICE OF ENGINES*/
 .engines {
   display: block;
   width: 100%; }
@@ -78,7 +80,8 @@ header {
 .newsOnly {
   color: #42501b; }
 
-/* all navigation lists */
+/*_____________________________________________
+                         all navigation lists*/
 nav {
   clear: both; }
   nav ol {
@@ -100,15 +103,38 @@ nav {
       border-right: 1px solid #9fbf2c; }
       nav ol.languages li:last-child {
         border-right: none; }
-    nav ol.common {
-      margin-top: 70px; }
-      nav ol.common li a {
-        color: rgba(66, 80, 27, 0.5);
-        font-size: 0.9em; }
-        nav ol.common li a:hover {
-          color: rgba(66, 80, 27, 0.3); }
 
-/*search results page*/
+/*____________________________________________
+                         SEARCH RESULTS PAGE*/
+.word-cloud {
+  border-top: 1px solid rgba(114, 122, 94, 0.2);
+  padding: 2em 2em 0 2em; }
+  .word-cloud ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .word-cloud ul li {
+      display: inline-block;
+      padding: 5px 20px; }
+      .word-cloud ul li a {
+        cursor: pointer; }
+        .word-cloud ul li a.xs {
+          font-size: 1em;
+          color: rgba(66, 80, 27, 0.4); }
+        .word-cloud ul li a.sm {
+          font-size: 1.5em;
+          color: rgba(66, 80, 27, 0.5); }
+        .word-cloud ul li a.md {
+          font-size: 2.0em;
+          color: rgba(239, 84, 17, 0.4); }
+        .word-cloud ul li a.lg {
+          font-size: 2.3em;
+          color: rgba(239, 84, 17, 0.7); }
+  .word-cloud:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .sr-summary {
   text-align: left; }
   .sr-summary header {
@@ -139,16 +165,20 @@ nav {
       margin-top: 2em;
       margin-bottom: 2.5em; }
 
-/*footer*/
+/*____________________________________________
+                            SITE-WIDE FOOTER*/
 footer.site-footer {
-  clear: both;
   text-align: center;
   background: rgba(235, 235, 235, 0.9);
   width: 100%;
-  bottom: 0;
-  padding-bottom: 2vh;
   display: block;
-  position: absolute; }
+  padding: 20px;
+  margin-top: 100px; }
+  footer.site-footer ol li a {
+    color: rgba(66, 80, 27, 0.5);
+    font-size: 0.9em; }
+    footer.site-footer ol li a:hover {
+      color: rgba(66, 80, 27, 0.3); }
   footer.site-footer .copyright {
     font-size: 0.8em;
     color: rgba(66, 80, 27, 0.4); }

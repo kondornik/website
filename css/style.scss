@@ -47,6 +47,8 @@ header{
     margin-top: 2em;
 }
 
+/*__________________________________________
+                         CHOICE OF ENGINES*/
 .engines{
     display: block;
     width: 100%;
@@ -104,10 +106,11 @@ header{
 
 /* news only */
 .newsOnly{
-        color:$textGreenDark;
+    color:$textGreenDark;
 }
 
-/* all navigation lists */
+/*_____________________________________________
+                         all navigation lists*/
 nav
 {
     clear: both;
@@ -138,27 +141,57 @@ nav
                 }
             }
         }
-        &.common{
-            margin-top: 70px;
-            li a{
-                color: transparentize($textGreenDark, 0.5);
-                font-size: 0.9em;
-                &:hover{
-                    color: transparentize($textGreenDark, 0.7);
-                }
-            }
-        }
     }
     
 } 
 
-/*search results page*/
+/*____________________________________________
+                         SEARCH RESULTS PAGE*/
+
+.word-cloud{
+        border-top: 1px solid transparentize($textGreenLight, 0.8);
+        padding: 2em 2em 0 2em;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            display: inline-block;
+            padding:5px 20px;
+            a{
+                cursor: pointer;
+                &.xs{
+                    font-size: 1em;
+                    color: transparentize($textGreenDark, 0.6);
+                }
+                &.sm{
+                    font-size: 1.5em;
+                    color: transparentize($textGreenDark, 0.5);
+                }
+                &.md{
+                    font-size: 2.0em;
+                    color: transparentize($orange, 0.6);
+                }
+                &.lg{
+                    font-size: 2.3em;
+                    color: transparentize($orange, 0.3);
+                }
+            }
+            
+        }
+    }
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
 .sr-summary{
     text-align: left;
     header{
         text-align: left;
         border-top: 1px solid transparentize($textGreenLight, 0.8);
-            
         h2{
             font-size: 1.5em;
             line-height: 0.5em;
@@ -195,16 +228,26 @@ nav
     
 }
 
-/*footer*/
+/*____________________________________________
+                            SITE-WIDE FOOTER*/
 footer.site-footer{
-    clear: both;
     text-align: center;
     background: transparentize(#EBEBEB, 0.1);
     width: 100%;
-    bottom: 0;
-    padding-bottom: 2vh;
     display: block;
-    position: absolute;
+    padding:20px;
+    margin-top:100px;
+
+    ol{
+        li a{
+            color: transparentize($textGreenDark, 0.5);
+            font-size: 0.9em;
+            &:hover{
+                color: transparentize($textGreenDark, 0.7);
+            }
+        }
+    }
+
     .copyright{
         font-size: 0.8em;
         color: transparentize($textGreenDark, 0.6);

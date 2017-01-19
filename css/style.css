@@ -25,14 +25,12 @@ header {
 /*_____________________________________
                          MAIN CONTENT*/
 .mainContent {
-  text-align: center;
   margin-top: 2em; }
 
 /*__________________________________________
                          CHOICE OF ENGINES*/
 .engines {
-  display: block;
-  width: 100%; }
+  display: block; }
   .engines button {
     display: block;
     float: left;
@@ -49,12 +47,9 @@ header {
       background-color: #64950e; }
 
 .searchField {
-  clear: both;
-  width: 100%;
   position: relative;
   /*Search button*/ }
   .searchField input {
-    width: 100%;
     box-sizing: border-box;
     box-shadow: none;
     height: 4em;
@@ -99,16 +94,21 @@ nav {
       text-decoration: none; }
       nav ol a:hover {
         color: rgba(66, 80, 27, 0.5); }
-    nav ol.languages li {
-      border-right: 1px solid #9fbf2c; }
-      nav ol.languages li:last-child {
-        border-right: none; }
+    nav ol.languages {
+      text-align: center; }
+      nav ol.languages li {
+        border-right: 1px solid #9fbf2c; }
+        nav ol.languages li:last-child {
+          border-right: none; }
 
 /*____________________________________________
                          SEARCH RESULTS PAGE*/
 .word-cloud {
   border-top: 1px solid rgba(114, 122, 94, 0.2);
-  padding: 2em 2em 0 2em; }
+  border-bottom: 1px solid rgba(114, 122, 94, 0.2);
+  padding: 2em;
+  text-align: center;
+  background: #EFEFEF; }
   .word-cloud ul {
     list-style: none;
     margin: 0;
@@ -136,10 +136,11 @@ nav {
     clear: both; }
 
 .sr-summary {
-  text-align: left; }
+  text-align: left;
+  padding: 0 1em; }
   .sr-summary header {
     text-align: left;
-    border-top: 1px solid rgba(114, 122, 94, 0.2); }
+    margin-top: 0.5em; }
     .sr-summary header h2 {
       font-size: 1.5em;
       line-height: 0.5em;
@@ -163,7 +164,15 @@ nav {
     .sr-summary .sr-summary-body article {
       clear: both;
       margin-top: 2em;
-      margin-bottom: 2.5em; }
+      margin-bottom: 2.5em;
+      padding-left: 1em;
+      border-left: 5px solid #DDD; }
+
+/*_____________________________________________
+                        SITE-WIDE BREADCRUMBS*/
+.breadcrumb {
+  margin: 0;
+  padding: 1em; }
 
 /*____________________________________________
                             SITE-WIDE FOOTER*/

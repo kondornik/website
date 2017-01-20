@@ -106,14 +106,35 @@ nav {
         nav ol.languages li:last-child {
           border-right: none; }
 
+.full-screen-bg {
+  background: #EFEFEF; }
+
+/*___________________________________________
+                    Blog-like pages (about)*/
+.mc-blog article {
+  padding: 1em; }
+  .mc-blog article:nth-of-type(2n) {
+    background: #EFEFEF; }
+  .mc-blog article h3 {
+    color: #999;
+    font-size: 1.8em; }
+  .mc-blog article p {
+    font-size: 1.1em;
+    line-height: 2em;
+    color: #666; }
+  .mc-blog article em {
+    font-size: 1.3em;
+    margin: 0.4em;
+    color: #42501b; }
+
 /*____________________________________________
                          SEARCH RESULTS PAGE*/
 .word-cloud {
   border-top: 1px solid rgba(114, 122, 94, 0.2);
   border-bottom: 1px solid rgba(114, 122, 94, 0.2);
+  background: #EFEFEF;
   padding: 2em;
-  text-align: center;
-  background: #EFEFEF; }
+  text-align: center; }
   .word-cloud ul {
     list-style: none;
     margin: 0;
@@ -249,7 +270,8 @@ ul.sr-sources {
                         SITE-WIDE BREADCRUMBS*/
 .breadcrumb {
   margin: 0;
-  padding: 1em; }
+  padding: 1em;
+  background: transparent; }
 
 /*____________________________________________
                             SITE-WIDE FOOTER*/

@@ -147,14 +147,41 @@ nav
     
 } 
 
+.full-screen-bg{
+    background: $bg-gray-md;
+}
+/*___________________________________________
+                    Blog-like pages (about)*/
+.mc-blog{
+    article{
+        padding:1em;
+        &:nth-of-type(2n){
+            background: $bg-gray-md;
+        }
+        h3{
+            color: $textGrayLight;
+            font-size: 1.8em;
+        }
+        p{
+            font-size: 1.1em;
+            line-height: 2em;
+            color: $textGrayDark;
+        }
+        em{
+            font-size: 1.3em;
+            margin:0.4em;
+            color:$textGreenDark;
+        }
+    }
+}
 /*____________________________________________
                          SEARCH RESULTS PAGE*/
 .word-cloud{
         border-top: 1px solid transparentize($textGreenLight, 0.8);
         border-bottom: 1px solid transparentize($textGreenLight, 0.8);
+        background: $bg-gray-md;
         padding: 2em;
         text-align: center;
-        background: $bg-gray-md;
     ul{
         list-style: none;
         margin: 0;
@@ -344,6 +371,7 @@ ul.sr-sources{
 .breadcrumb{
     margin:0;
     padding:1em;
+    background: transparent;
 }
 
 /*____________________________________________

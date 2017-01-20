@@ -150,11 +150,25 @@ nav {
         .word-cloud ul li a.xs {
           font-size: 0.7em; }
         .word-cloud ul li a.sm {
-          font-size: 1.2em; }
+          font-size: 1em; }
         .word-cloud ul li a.md {
-          font-size: 1.7em; }
+          font-size: 1.5em; }
         .word-cloud ul li a.lg {
-          font-size: 2.0em; } }
+          font-size: 1.7em; } }
+ul.sr-sources {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  ul.sr-sources li {
+    font-weight: normal;
+    margin: 15px 0; }
+  ul.sr-sources input[type="checkbox"] {
+    margin-right: 10px; }
+  ul.sr-sources p {
+    font-style: italic;
+    margin-left: 26px;
+    color: #999; }
+
 .actions {
   margin-top: 0.5em;
   float: right; }
@@ -172,6 +186,9 @@ nav {
       color: #666; }
   .actions .num-of-results {
     display: inline-block; }
+    .actions .num-of-results a {
+      margin: 0 10px;
+      cursor: pointer; }
     .actions .num-of-results input[type="text"] {
       width: 50px;
       background: transparent;
@@ -186,7 +203,10 @@ nav {
 @media (max-width: 768px) {
   .actions {
     float: left;
-    display: block; }
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    width: 100%; }
     .actions:after {
       content: "";
       display: table;

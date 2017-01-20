@@ -7,6 +7,7 @@ $textGreenDark: #42501b;
 $textGreenLight:#727a5e;
 $textGrayDark: #666;
 $textGrayLight: #999;
+$bg-gray-md:#EFEFEF;
 
 $baseFontSize: 15px;
 
@@ -148,13 +149,12 @@ nav
 
 /*____________________________________________
                          SEARCH RESULTS PAGE*/
-
 .word-cloud{
         border-top: 1px solid transparentize($textGreenLight, 0.8);
         border-bottom: 1px solid transparentize($textGreenLight, 0.8);
         padding: 2em;
         text-align: center;
-        background: #EFEFEF;
+        background: $bg-gray-md;
     ul{
         list-style: none;
         margin: 0;
@@ -190,7 +190,6 @@ nav
         clear: both;
     }
 }
-
 @media (max-width: 768px) { 
     .word-cloud{
         padding:5px;
@@ -202,21 +201,45 @@ nav
                     font-size: 0.7em;
                 }
                 &.sm{
-                    font-size: 1.2em;
+                    font-size: 1em;
                 }
                 &.md{
-                    font-size: 1.7em;
+                    font-size: 1.5em;
                 }
                 &.lg{
-                    font-size: 2.0em;
+                    font-size: 1.7em;
                 }
             }
         }
     }
-    
-     
 }
 
+
+// .sr-sources{
+//     border-top: 1px solid transparentize($textGreenLight, 0.8);
+//     padding: 2em;
+//     background: $bg-gray-md;
+// }
+
+
+ul.sr-sources{
+    list-style: none;
+    margin:0;
+    padding:0;
+    li{
+        font-weight: normal;
+        margin: 15px 0;
+    }
+    input[type="checkbox"]{
+        margin-right:10px;
+    }
+
+    p{
+        font-style: italic;
+        margin-left:26px;
+        color:$textGrayLight;
+    }
+}
 .actions{
     margin-top: 0.5em;
     float: right;
@@ -237,6 +260,10 @@ nav
     }
     .num-of-results{
         display: inline-block;
+        a{
+            margin:0 10px;
+            cursor: pointer;
+        }
         input[type="text"]{
             width: 50px;
             background: transparent;
@@ -256,6 +283,9 @@ nav
     .actions{
         float: left;
         display: block;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        width: 100%;
         &:after {
             content: "";
             display: table;

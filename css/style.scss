@@ -15,6 +15,8 @@ body {
     background-color: #f2f2f2;
     font-family: Arial, Helvetica, sans-serif;
     font-size: $baseFontSize;
+    padding-top:70px;
+    padding-bottom:120px;
 }
 a{
     color: $green;
@@ -43,6 +45,20 @@ header{
 }
 .green{
     color:$green;
+}
+
+
+.main-nav{
+    ol{
+        margin-top:10px;
+        li{
+            color: $orange;
+            margin: 0 1em;
+            a{
+                color:$green;
+            }
+        }
+    }
 }
 
 /*_____________________________________
@@ -155,7 +171,7 @@ nav
 .mc-blog{
     article{
         padding:1em;
-        &:nth-of-type(2n){
+        &:nth-of-type(2n-1){
             background: $bg-gray-md;
         }
         h3{
@@ -171,6 +187,9 @@ nav
             font-size: 1.3em;
             margin:0.4em;
             color:$textGreenDark;
+        }
+        a{
+            font-size: 1.2em;
         }
     }
 }

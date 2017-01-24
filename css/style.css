@@ -102,19 +102,30 @@ nav {
       margin: 0;
       padding: 0;
       display: inline-block; }
-    nav ol a {
+    nav ol a, nav ol label {
       display: block;
-      padding: 5px 10px;
+      font-weight: normal;
+      padding: 0 14px 0 10px;
       color: #42501b;
-      text-decoration: none; }
-      nav ol a:hover {
-        color: rgba(66, 80, 27, 0.5); }
+      text-decoration: none;
+      cursor: pointer; }
+      nav ol a:hover, nav ol label:hover {
+        color: rgba(66, 80, 27, 0.5);
+        text-decoration: underline; }
     nav ol.languages {
       text-align: center; }
       nav ol.languages li {
         border-right: 1px solid #9fbf2c; }
         nav ol.languages li:last-child {
           border-right: none; }
+      nav ol.languages input[type="radio"] {
+        display: none; }
+      nav ol.languages input[checked="checked"] + label {
+        color: #9fbf2c; }
+        nav ol.languages input[checked="checked"] + label:hover {
+          cursor: default;
+          color: #9fbf2c;
+          text-decoration: none; }
 
 .full-screen-bg {
   background: #EFEFEF; }
@@ -291,11 +302,13 @@ footer.site-footer {
   width: 100%;
   display: block;
   padding: 20px; }
-  footer.site-footer ol li a {
-    color: rgba(66, 80, 27, 0.5);
-    font-size: 0.9em; }
-    footer.site-footer ol li a:hover {
-      color: rgba(66, 80, 27, 0.3); }
+  footer.site-footer ol {
+    margin-bottom: 10px; }
+    footer.site-footer ol li a {
+      color: rgba(66, 80, 27, 0.5);
+      font-size: 0.9em; }
+      footer.site-footer ol li a:hover {
+        color: rgba(66, 80, 27, 0.3); }
   footer.site-footer .copyright {
     font-size: 0.8em;
     color: rgba(66, 80, 27, 0.4); }

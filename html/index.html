@@ -37,7 +37,7 @@
 
             <div class="form-group">
               <input type="text" name="search" value="" class="form-control" placeholder="What are you looking for?">
-              <a class="btn-search"><span class="fa fa-search" aria-hidden="true"></span></a>
+              <!--___CHANGE: changed button to link and i to span --><a class="btn-search"><span class="fa fa-search" aria-hidden="true"></span></a><!--/___END CHANGE-->
             </div>
 
             
@@ -63,10 +63,18 @@
 
       <nav>
         <ol class="languages">
-          <li><a href="#">English</a></li>
-          <li><a href="#">French</a></li>
-          <li><a href="#">German</a></li>
-          <li><a href="#">Spanish</a></li>
+          <li>
+            <span id="langEng"><input id="radioLanguage_0" type="radio" name="radioLanguage" value="English" checked="checked"><label for="radioLanguage_0">English</label></span>
+          </li>
+          <li>
+            <span id="langFr"><input id="radioLanguage_1" type="radio" name="radioLanguage" value="French"><label for="radioLanguage_1">French</label></span>
+          </li>
+          <li>
+            <span id="langGer"><input id="radioLanguage_2" type="radio" name="radioLanguage" value="German"><label for="radioLanguage_2">German</label></span>
+          </li>
+          <li>
+            <span id="langSpan"><input id="radioLanguage_3" type="radio" name="radioLanguage" value="Spanish"><label for="radioLanguage_3">Spanish</label></span>
+          </li>
         </ol>
       </nav>
     

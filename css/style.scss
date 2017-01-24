@@ -140,14 +140,16 @@ nav
             padding: 0;
             display: inline-block;
         }
-        a{
+        a, label{
             display: block;
-            padding: 5px 10px;
+            font-weight: normal;
+            padding: 0 14px 0 10px;
             color:$textGreenDark;
             text-decoration: none;
+            cursor: pointer;
             &:hover{
                 color:transparentize($textGreenDark, 0.5);
-                
+                text-decoration: underline;
             }
         }
         &.languages{
@@ -158,6 +160,18 @@ nav
                     border-right: none;
                 }
             }
+            input[type="radio"]{
+                display: none;
+            }
+            input[checked="checked"] + label{
+                color: $green;
+                &:hover{
+                    cursor: default;
+                    color: $green;
+                    text-decoration: none;
+                }
+            }
+            
         }
     }
     
@@ -403,6 +417,7 @@ footer.site-footer{
     padding:20px;
 
     ol{
+        margin-bottom:10px;
         li a{
             color: transparentize($textGreenDark, 0.5);
             font-size: 0.9em;

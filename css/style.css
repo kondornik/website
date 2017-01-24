@@ -74,7 +74,7 @@ header {
     border: 1px solid rgba(114, 122, 94, 0.2); }
     .searchField input::-webkit-input-placeholder {
       color: #727a5e; }
-  .searchField button.btn-search {
+  .searchField a.btn-search {
     position: absolute;
     top: 0;
     right: 0;
@@ -82,7 +82,7 @@ header {
     background: none;
     cursor: pointer;
     padding: 1.2em 2.2em; }
-    .searchField button.btn-search .fa-search {
+    .searchField a.btn-search .fa-search {
       font-size: 2.5em;
       color: #ef5411; }
 
@@ -273,10 +273,8 @@ ul.sr-sources {
     margin-top: 2em; }
     .sr-summary .sr-summary-body article {
       clear: both;
-      margin-top: 2em;
-      margin-bottom: 2.5em;
-      padding-left: 1em;
-      border-left: 5px solid #DDD; }
+      margin-top: 1em;
+      margin-bottom: 1em; }
 
 /*_____________________________________________
                         SITE-WIDE BREADCRUMBS*/
@@ -292,8 +290,7 @@ footer.site-footer {
   background: rgba(235, 235, 235, 0.9);
   width: 100%;
   display: block;
-  padding: 20px;
-  margin-top: 100px; }
+  padding: 20px; }
   footer.site-footer ol li a {
     color: rgba(66, 80, 27, 0.5);
     font-size: 0.9em; }

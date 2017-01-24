@@ -124,6 +124,14 @@ header{
 /* news only */
 .newsOnly{
     color:$textGreenDark;
+    .checkbox {
+        input{
+            margin-top:6px;
+        }
+        label{
+            padding-left:0;
+        }
+    }
 }
 
 /*_____________________________________________
@@ -342,8 +350,6 @@ ul.sr-sources{
     }
     
 }
-
-
 
 @media (max-width: 768px) { 
     .actions{

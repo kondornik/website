@@ -89,6 +89,10 @@ header {
 /* news only */
 .newsOnly {
   color: #42501b; }
+  .newsOnly .checkbox input {
+    margin-top: 6px; }
+  .newsOnly .checkbox label {
+    padding-left: 0; }
 
 /*_____________________________________________
                          all navigation lists*/

@@ -228,21 +228,22 @@ ul.sr-sources {
     color: #999; }
     .actions a:hover {
       color: #666; }
-  .actions .num-of-results {
-    display: inline-block; }
-    .actions .num-of-results a {
-      margin: 0 10px;
-      cursor: pointer; }
-    .actions .num-of-results input[type="text"] {
-      width: 50px;
-      background: transparent;
-      border: none;
-      border-bottom: 1px solid #CCC;
-      padding: 0 10px;
-      font-size: 1.5em;
-      color: #999; }
-      .actions .num-of-results input[type="text"]:hover {
-        color: #666; }
+
+.modal h3 {
+  font-size: 1.2em;
+  border-bottom: 1px solid #EEE;
+  color: #666;
+  margin-top: 2em; }
+.modal input[type="text"] {
+  width: 50px;
+  background: transparent;
+  border: 1px solid #CCC;
+  padding: 2px 10px 0 12px;
+  font-size: 1.5em;
+  margin: 0 10px;
+  color: #999; }
+  .modal input[type="text"]:hover {
+    color: #666; }
 
 @media (max-width: 768px) {
   .actions {
@@ -258,7 +259,9 @@ ul.sr-sources {
 
   .sr-summary h2 {
     clear: both;
-    display: block; } }
+    display: block; }
+    .sr-summary h2.left-padding {
+      padding-left: 15px; } }
 .sr-summary {
   text-align: left;
   padding: 0 1em;
@@ -286,6 +289,9 @@ ul.sr-sources {
       clear: both;
       margin-top: 1em;
       margin-bottom: 1em; }
+    .sr-summary .sr-summary-body aside {
+      padding-left: 1em;
+      border-left: 5px solid #DDD; }
 
 /*_____________________________________________
                         SITE-WIDE BREADCRUMBS*/

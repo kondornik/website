@@ -71,44 +71,81 @@
 
     <div class="container">
       <div class="row">
-        
+        <div class="col-lg-offset-1 col-lg-10 col-xs-12">
           <div class="sr-summary">
-            
             <header>
-              <!--<div class="actions">
-                <div class="num-of-results">Showing <input type="text" value="20" width="10"> sentences from <a data-toggle="modal" data-target="#sourcesModal">these sources 
-<i class="fa fa-cog" aria-hidden="true"></i></a></div>
-                <div class="separator">&nbsp;</div>
-                <a href="#"><i class="fa fa-save"></i></a>
-              </div>-->
-              <div class="col-lg-offset-1 col-lg-7 col-sm-10 col-xs-12">
-                <h2>Summary <span>"Obama"</span></h2>
-              </div>
+              <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7">
+                  <h2>Summary <span>"Obama"</span></h2>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="actions">
+                <div class="num-of-results"><input type="text" value="20" width="10"> sentences</div>
+              </div></div>
 
-              <div class="col-lg-offset-1 col-lg-2 col-sm-2 col-xs-12">
-                <button type="button" data-toggle="modal" data-target="#sourcesModal" class="btn btn-default">Modify Result</button>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <h2 class="left-padding">Sources</h2>
+                </div>
               </div>
             </header>
-          
-          <div class="col-lg-offset-1 col-lg-10 col-xs-12">
-            <div class="sr-summary-body">
+
+            <div class="row sr-summary-body">
+              <div class="col-lg-9 col-md-9 col-sm-9">
+              
               <article>
                 <p>As Obama frets about Russian cyberattacks, one can't help wonder if he is focusing on Russian misdemeanors
                   in order to distract attention from his failure to address the massive warm crimes that Russia has been
-                  an accomplice to in Syria.</p>
-                <source>[SOURCE: <a href="#">Barack Obama News, Photos and Opinion - HuffPost Politics</a>] </source>
+                  an accomplice to in Syria. <a href="http://www.huffingtonpost.com/news/barack-obama/" target="new"><i class="fa fa-external-link"></i></a></p>
+               
               </article>
-
+              
               <article>
                 <p>As Obama frets about Russian cyberattacks, one can't help wonder if he is focusing on Russian misdemeanors
                   in order to distract attention from his failure to address the massive warm crimes that Russia has been
-                  an accomplice to in Syria.</p>
-                <source>[SOURCE: <a href="#">Barack Obama News, Photos and Opinion - HuffPost Politics</a>] </source>
+                  an accomplice to in Syria. <a href="http://www.huffingtonpost.com/news/barack-obama/" target="new"><i class="fa fa-external-link"></i></a></p>
+                
               </article>
-
+              
               <article>
                 <p>As Obama frets about Russian cyberattacks, one can't help wonder if he is focusing on Russian misdemeanors in order to distract attention from his failure to address the massive warm crimes that Russia has been an accomplice to in Syria. <a href="http://www.huffingtonpost.com/news/barack-obama/" target="new"><i class="fa fa-external-link"></i></a> </p>
               </article>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <aside>
+                 <ul class="sr-sources">
+                  <li>
+                    <label>
+                        <input type="checkbox" name="newsOnly" checked value=""> HuffPost Politics
+                    </label>
+                    <p>Barack Obama News, Photos and Opinion - HuffPost Politics <a href="http://www.huffingtonpost.com/news/barack-obama/" target="new"><i class="fa fa-external-link"></i></a></p>
+                  </li>
+
+                  <li>
+                    <label>
+                        <input type="checkbox" name="newsOnly" checked value=""> Fox News  
+                    </label>
+                    <p>Obama commutes Chelsea Manning's sentence for leaking Army ... <a href="http://www.foxnews.com/politics/2017/01/17/obama-commutes-chelsea-mannings-sentence-for-leaking-army-documents.html" target="new"><i class="fa fa-external-link"></i></a></p>
+                  </li>
+
+                  <li>
+                    <label>
+                        <input type="checkbox" name="newsOnly" checked value=""> Los Angeles Times
+                    </label>
+                    <p>Barack Obama Articles, Photos, and Videos - Los Angeles Times <a href="http://www.latimes.com/topic/politics-government/government/barack-obama-PEPLT007408-topic.htm" target="new"><i class="fa fa-external-link"></i></a></p>
+                  </li>
+                  
+                  <li>
+                    <label>
+                        <input type="checkbox" name="newsOnly" checked value=""> Wikipedia 
+                    </label>
+                    <p>Barack Obama - Wikipedia <a href="https://en.wikipedia.org/wiki/Barack_Obama" target="new"><i class="fa fa-external-link"></i></a></p>
+                  </li>
+                  
+                </ul>
+                </aside>
+              </div>
+
             </div>
           </div><!--/.sr-summary-->
         </div>
@@ -146,15 +183,11 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Modify Results</h4>
+          <h4 class="modal-title" id="myModalLabel">Choose sources</h4>
         </div>
         <div class="modal-body">
 
-        <!--<h3>Sentences</h3>-->
-        <div class="num-of-results">Display <input type="text" value="20" width="10"> sentences</div>
 
-
-        <h3>Choose sources</h3>
           <ul class="sr-sources">
             <li>
               <label>

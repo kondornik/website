@@ -5,6 +5,9 @@ body {
   padding-top: 70px;
   padding-bottom: 120px; }
 
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 200px; } }
 a {
   color: #9fbf2c; }
   a:hover {
@@ -249,27 +252,10 @@ ul.sr-sources {
   .modal input[type="text"]:hover {
     color: #666; }
 
-@media (max-width: 768px) {
-  .actions {
-    float: left;
-    display: block;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    width: 100%; }
-    .actions:after {
-      content: "";
-      display: table;
-      clear: both; }
-
-  .sr-summary h2 {
-    clear: both;
-    display: block; }
-    .sr-summary h2.left-padding {
-      padding-left: 15px; } }
 .sr-summary {
   text-align: left;
   padding: 0 1em;
-  display: inline-block; }
+  display: block; }
   .sr-summary header {
     text-align: left;
     margin-top: 0.5em; }
@@ -287,6 +273,22 @@ ul.sr-sources {
       content: "";
       display: table;
       clear: both; }
+    .sr-summary header h3 {
+      display: block;
+      float: right;
+      text-align: right;
+      font-size: 1em;
+      color: #999;
+      font-style: italic;
+      margin: 0 10px 0 0;
+      padding-right: 10px;
+      border-right: 3px solid #CCC;
+      line-height: 1.2em; }
+      .sr-summary header h3 span {
+        font-weight: bold;
+        color: #333; }
+    .sr-summary header button {
+      float: right; }
   .sr-summary .sr-summary-body {
     margin-top: 2em; }
     .sr-summary .sr-summary-body article {
@@ -297,6 +299,24 @@ ul.sr-sources {
       padding-left: 1em;
       border-left: 5px solid #DDD; }
 
+@media (max-width: 768px) {
+  .actions {
+    float: left;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    width: 100%; }
+    .actions:after {
+      content: "";
+      display: table;
+      clear: both; }
+
+  .sr-summary header h3 {
+    margin-top: 15px;
+    float: left; }
+  .sr-summary header button {
+    margin-top: 15px;
+    float: right; } }
 /*_____________________________________________
                         SITE-WIDE BREADCRUMBS*/
 .breadcrumb {

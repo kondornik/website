@@ -11,9 +11,24 @@
 <%@ Import namespace="System.Linq" %>
 <html>
    <head>
-	    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../vendor/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+
     <title>SenseBot search page</title>
-        <link rel="stylesheet"href="intro.css">
+	
 <script type="text/javascript">
 var i
 function glow()
@@ -553,22 +568,29 @@ private static string WebSearchEndPoint = "https://api.cognitive.microsoft.com/b
       </script>
 
 
-       <center>
-		<img src="sensebotlogo.jpg">
-		<br>
-		<p>
-       </center>
-		<div style="text-align: center; color: darkblue; font-size: 20;">
-			<i>The Search Engine that finds sense in a heap of Web pages</i>
-		</div>
+  <div class="container-fluid">
+    <header>
+      <div class="row">
+        <div class="col-lg-12">
+          <h1><span class="orange">Sense</span><span class="green">Bot</span></h1>
+        </div>
+        <div class="col-lg-12">
+          <p> Search Engine that finds sense in a heap of Web pages</p>
+        </div>
+      </div>
+<div class="topMargin">
+        <span id="progress">
+            <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+        </span>
 
-       <br>
-       <br>
-<center>
-<span id="progress" >
-   <h1><i>Searching...</i></h1>
-<br />
-   </span>
+        <h3 class="loading">Loading</h3>
+</div>
+    </header>
+  </div><!--/.container-->
+
+   
+
         <span id='myHiddenDiv' style='display:none'> 
             <img src='' id='myAnimatedImage' align="middle"> 
           </span> 

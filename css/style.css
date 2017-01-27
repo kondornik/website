@@ -45,6 +45,13 @@ header {
 .mainContent {
   margin-top: 1em; }
 
+.topMargin {
+  margin-top: 4em; }
+
+.loading {
+  color: #999;
+  font-style: italic; }
+
 /*__________________________________________
                          CHOICE OF ENGINES*/
 .engines {

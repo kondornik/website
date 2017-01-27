@@ -115,9 +115,9 @@ header{
             background-color:#ECECEC;
             border-color: #E6E6E6;
         }
-        &:focus{
-            outline: none;
-        }
+        // &:focus{
+        //     outline: none;
+        // }
     }
 }
 
@@ -136,21 +136,22 @@ header{
             color:$textGrayLight;
         }
     }
+
     /*Search button*/
-    a.btn-search{
+    .btn-search{
         position: absolute;
         top: 0;
         right: 0;
         border: none;
         background: none;
         cursor: pointer;
-        padding:1.2em 2.2em;
+        padding:1.2em 1.2em 1em 1em;
+        margin-right:1em;
+        color: $orange;
         .fa-search{
             font-size: 2.5em;
-            color: $orange;
         }
         &:focus{
-            outline: none;
         }
     }    
 }
@@ -414,6 +415,7 @@ ul.sr-sources{
             span{
                 font-style: italic;
                 font-size: 0.8em;
+                line-height: 1.2em;
                 color: $textGrayDark;
             }
         }

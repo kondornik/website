@@ -78,8 +78,6 @@ header {
     .engines button:hover {
       background-color: #ECECEC;
       border-color: #E6E6E6; }
-    .engines button:focus {
-      outline: none; }
 
 .searchField {
   position: relative;
@@ -94,19 +92,18 @@ header {
     border: 1px solid rgba(131, 182, 69, 0.2); }
     .searchField input::-webkit-input-placeholder {
       color: #999; }
-  .searchField a.btn-search {
+  .searchField .btn-search {
     position: absolute;
     top: 0;
     right: 0;
     border: none;
     background: none;
     cursor: pointer;
-    padding: 1.2em 2.2em; }
-    .searchField a.btn-search .fa-search {
-      font-size: 2.5em;
-      color: #eb5026; }
-    .searchField a.btn-search:focus {
-      outline: none; }
+    padding: 1.2em 1.2em 1em 1em;
+    margin-right: 1em;
+    color: #eb5026; }
+    .searchField .btn-search .fa-search {
+      font-size: 2.5em; }
 
 /* news only */
 .newsOnly {
@@ -287,6 +284,7 @@ ul.sr-sources {
       .sr-summary header h2 span {
         font-style: italic;
         font-size: 0.8em;
+        line-height: 1.2em;
         color: #666; }
     .sr-summary header:after {
       content: "";

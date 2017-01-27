@@ -46,16 +46,16 @@
       <form>
         <div class="row engines">
           <div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10">
-            <button type="button">SenseBot</button>
-            <button type="button" class="active">Bing</button>
+            <button type="button" tabindex="1">SenseBot</button>
+            <button type="button" tabindex="2" class="active">Bing</button>
           </div>
         </div>
         <div class="row searchField">
           <div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10">
 
             <div class="form-group">
-              <input type="text" name="search" value="" class="form-control" placeholder="What are you looking for?">
-              <!--___CHANGE: changed button to link and i to span --><a class="btn-search"><span class="fa fa-search" aria-hidden="true"></span></a><!--/___END CHANGE-->
+              <input type="text" name="search" value="" class="form-control" tabindex="3" placeholder="What are you looking for?">
+              <!--___CHANGE: changed button to link and i to span --><a class="btn-search" tabindex="4"><span class="fa fa-search" aria-hidden="true"></span></a><!--/___END CHANGE-->
             </div>
 
             
@@ -67,7 +67,7 @@
           <div class="newsOnly pull-right">
             
               <div class="checkbox">
-                <input type="checkbox" name="newsOnly" value="newsOnly">
+                <input type="checkbox" name="newsOnly" tabindex="5" value="newsOnly">
                 <label>news only</label>
               </div>
 

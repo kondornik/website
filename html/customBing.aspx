@@ -591,10 +591,9 @@ private static string WebSearchEndPoint = "https://api.cognitive.microsoft.com/b
 
    
 
-        <span id='myHiddenDiv' style='display:none'> 
+        <!--<span id='myHiddenDiv' style='display:none'> 
             <img src='' id='myAnimatedImage' align="middle"> 
-          </span> 
-</center>
+          </span> -->
 
 			<form action="custom1.aspx" method="post" runat="server">
 			

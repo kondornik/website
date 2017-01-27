@@ -31,7 +31,9 @@ header {
   color: #4b8919; }
 
 .main-nav ol {
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto; }
   .main-nav ol li {
     color: #eb5026;
     margin: 0 1em; }
@@ -54,7 +56,7 @@ header {
     height: 45px;
     color: white;
     background-color: black;
-    border: 1px solid #c3c3c2;
+    border: none;
     width: 50%;
     background-color: #dfdfdf;
     color: #7a8572;
@@ -63,8 +65,14 @@ header {
     width: 50%; }
     .engines button.active {
       background-color: #4b8919;
-      border: 1x solid #4b8919;
       color: #f2f2f2; }
+      .engines button.active:hover {
+        background-color: #83b645; }
+    .engines button:hover {
+      background-color: #ECECEC;
+      border-color: #E6E6E6; }
+    .engines button:focus {
+      outline: none; }
 
 .searchField {
   position: relative;
@@ -76,9 +84,9 @@ header {
     padding-left: 30px;
     font-size: 1.2em;
     color: #42501b;
-    border: 1px solid rgba(114, 122, 94, 0.2); }
+    border: 1px solid rgba(131, 182, 69, 0.2); }
     .searchField input::-webkit-input-placeholder {
-      color: #727a5e; }
+      color: #999; }
   .searchField a.btn-search {
     position: absolute;
     top: 0;
@@ -112,11 +120,11 @@ nav {
       list-style: none;
       margin: 0;
       padding: 0;
-      display: inline-block; }
+      display: inline-block;
+      padding: 0 12px 0 12px; }
     nav ol a, nav ol label {
       display: block;
       font-weight: normal;
-      padding: 0 14px 0 10px;
       color: #42501b;
       text-decoration: none;
       cursor: pointer; }
@@ -160,8 +168,8 @@ nav {
 /*____________________________________________
                          SEARCH RESULTS PAGE*/
 .word-cloud {
-  border-top: 1px solid rgba(114, 122, 94, 0.2);
-  border-bottom: 1px solid rgba(114, 122, 94, 0.2);
+  border-top: 1px solid rgba(131, 182, 69, 0.2);
+  border-bottom: 1px solid rgba(131, 182, 69, 0.2);
   background: #EFEFEF;
   padding: 2em;
   text-align: center; }
@@ -329,15 +337,39 @@ ul.sr-sources {
   padding: 1em;
   background: transparent; }
 
+/*_____________________________________________
+                                        lists*/
+ul.describe li {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  color: #666; }
+
+ul.listOfLinks {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  ul.listOfLinks li {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.7em; }
+    ul.listOfLinks li a {
+      color: #4b8919; }
+      ul.listOfLinks li a:hover {
+        color: #83b645; }
+
 /*____________________________________________
                             SITE-WIDE FOOTER*/
+nav.navbar {
+  margin-bottom: 0; }
+
 footer.site-footer {
   text-align: center;
   background: rgba(235, 235, 235, 0.9);
   width: 100%;
   display: block;
   padding: 20px;
-  margin-top: 40px; }
+  margin-top: 200px; }
   footer.site-footer ol {
     margin-bottom: 10px; }
     footer.site-footer ol li a {

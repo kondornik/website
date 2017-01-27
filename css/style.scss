@@ -4,7 +4,7 @@ $orange:#eb5026;
 $green:#4b8919;
 $greenActive:#4b8919;
 $textGreenDark: #42501b;
-$textGreenLight:#727a5e;
+$textGreenLight:#83b645;
 $textGrayDark: #666;
 $textGrayLight: #999;
 $bg-gray-md:#EFEFEF;
@@ -58,6 +58,8 @@ header{
 .main-nav{
     ol{
         margin-top:10px;
+        margin-left: auto;
+        margin-right: auto;
         li{
             color: $orange;
             margin: 0 1em;
@@ -86,7 +88,8 @@ header{
         height: 45px;
         color: white;
         background-color:black;
-        border: 1px solid #c3c3c2;
+        // border: 1px solid #c3c3c2;
+        border: none;
         width: 50%;
         background-color: #dfdfdf;
         color:#7a8572;
@@ -95,8 +98,18 @@ header{
         width: 50%;
         &.active{
             background-color: $green;
-            border: 1x solid $green;
+            // border: 1x solid $green;
             color:#f2f2f2;
+            &:hover{
+                background-color:$textGreenLight;
+            }
+        }
+        &:hover{
+            background-color:#ECECEC;
+            border-color: #E6E6E6;
+        }
+        &:focus{
+            outline: none;
         }
     }
 }
@@ -113,7 +126,7 @@ header{
         border: 1px solid transparentize($textGreenLight, 0.8);
 
         &::-webkit-input-placeholder{
-            color:$textGreenLight;
+            color:$textGrayLight;
         }
     }
     /*Search button*/
@@ -161,11 +174,11 @@ nav
             margin: 0;
             padding: 0;
             display: inline-block;
+            padding: 0 12px 0 12px;
         }
         a, label{
             display: block;
             font-weight: normal;
-            padding: 0 14px 0 10px;
             color:$textGreenDark;
             text-decoration: none;
             cursor: pointer;
@@ -479,15 +492,47 @@ ul.sr-sources{
     background: transparent;
 }
 
+/*_____________________________________________
+                                        lists*/
+
+ul.describe{
+    li{
+        font-size: 1.1em;
+        line-height: 1.7em;
+        color: #666;
+    }
+}                                        
+ul.listOfLinks{
+    padding: 0;
+    margin:0;
+    list-style: none;
+    li{
+        padding: 0;
+        margin: 0;
+        font-size: 1.1em;
+        line-height: 1.7em;
+        a{
+            color: $green;
+            &:hover{
+                color: $textGreenLight;
+            }
+        }
+    }
+}
+
 /*____________________________________________
                             SITE-WIDE FOOTER*/
+
+nav.navbar{
+    margin-bottom: 0;
+}
 footer.site-footer{
     text-align: center;
     background: transparentize(#EBEBEB, 0.1);
     width: 100%;
     display: block;
     padding:20px;
-    margin-top: 40px; //temporary fix
+    margin-top: 200px; //temporary fix
 
     ol{
         margin-bottom:10px;

@@ -2,24 +2,22 @@ body {
   background-color: #f2f2f2;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  padding-top: 70px;
-  padding-bottom: 120px; }
+  padding-top: 70px; }
 
-@media (max-width: 768px) {
-  body {
-    padding-bottom: 200px; } }
 a {
-  color: #9fbf2c; }
+  color: #4b8919; }
   a:hover {
-    color: #64950e; }
+    color: #4b8919; }
 
 header {
   text-align: center;
   margin-top: 2em; }
   header p {
-    color: #42501b;
-    font-size: 1.5em;
-    margin: 0; }
+    color: #999;
+    font-size: 1.4em;
+    margin: 0;
+    font-style: italic;
+    font-weight: normal; }
   header h1 {
     font-size: 4em;
     margin: 0;
@@ -27,42 +25,46 @@ header {
     font-weight: bold; }
 
 .orange {
-  color: #ef5411; }
+  color: #eb5026; }
 
 .green {
-  color: #9fbf2c; }
+  color: #4b8919; }
 
 .main-nav ol {
   margin-top: 10px; }
   .main-nav ol li {
-    color: #ef5411;
+    color: #eb5026;
     margin: 0 1em; }
     .main-nav ol li a {
-      color: #9fbf2c; }
+      color: #4b8919; }
 
 /*_____________________________________
                          MAIN CONTENT*/
 .mainContent {
-  margin-top: 2em; }
+  margin-top: 1em; }
 
 /*__________________________________________
                          CHOICE OF ENGINES*/
 .engines {
-  display: block; }
+  display: block;
+  padding-top: 2em; }
   .engines button {
     display: block;
     float: left;
     height: 45px;
     color: white;
     background-color: black;
-    border: none;
+    border: 1px solid #c3c3c2;
     width: 50%;
-    background-color: #9fbf2c;
+    background-color: #dfdfdf;
+    color: #7a8572;
     font-size: 1.2em;
     cursor: pointer;
     width: 50%; }
     .engines button.active {
-      background-color: #64950e; }
+      background-color: #4b8919;
+      border: 1x solid #4b8919;
+      color: #f2f2f2; }
 
 .searchField {
   position: relative;
@@ -87,7 +89,9 @@ header {
     padding: 1.2em 2.2em; }
     .searchField a.btn-search .fa-search {
       font-size: 2.5em;
-      color: #ef5411; }
+      color: #eb5026; }
+    .searchField a.btn-search:focus {
+      outline: none; }
 
 /* news only */
 .newsOnly {
@@ -122,17 +126,13 @@ nav {
     nav ol.languages {
       text-align: center; }
       nav ol.languages li {
-        border-right: 1px solid #9fbf2c; }
+        border-right: 1px solid #4b8919; }
         nav ol.languages li:last-child {
           border-right: none; }
-      nav ol.languages input[type="radio"] {
-        display: none; }
-      nav ol.languages input[checked="checked"] + label {
-        color: #9fbf2c; }
-        nav ol.languages input[checked="checked"] + label:hover {
-          cursor: default;
-          color: #9fbf2c;
-          text-decoration: none; }
+        nav ol.languages li a {
+          color: #999; }
+          nav ol.languages li a.active {
+            color: #4b8919; }
 
 .full-screen-bg {
   background: #EFEFEF; }
@@ -182,10 +182,10 @@ nav {
           color: rgba(66, 80, 27, 0.5); }
         .word-cloud ul li a.md {
           font-size: 2.0em;
-          color: rgba(239, 84, 17, 0.4); }
+          color: rgba(235, 80, 38, 0.4); }
         .word-cloud ul li a.lg {
           font-size: 2.3em;
-          color: rgba(239, 84, 17, 0.7); }
+          color: rgba(235, 80, 38, 0.7); }
   .word-cloud:after {
     content: "";
     display: table;
@@ -213,12 +213,16 @@ ul.sr-sources {
   ul.sr-sources li {
     font-weight: normal;
     margin: 15px 0; }
+    ul.sr-sources li label {
+      font-weight: normal; }
   ul.sr-sources input[type="checkbox"] {
     margin-right: 10px; }
   ul.sr-sources p {
     font-style: italic;
     margin-left: 26px;
     color: #999; }
+    ul.sr-sources p i {
+      margin-left: 7px; }
 
 .actions {
   margin-top: 0.5em;
@@ -280,7 +284,7 @@ ul.sr-sources {
       font-size: 1em;
       color: #999;
       font-style: italic;
-      margin: 0 10px 0 0;
+      margin: 10px 10px 0 0;
       padding-right: 10px;
       border-right: 3px solid #CCC;
       line-height: 1.2em; }
@@ -288,7 +292,8 @@ ul.sr-sources {
         font-weight: bold;
         color: #333; }
     .sr-summary header button {
-      float: right; }
+      float: right;
+      margin-top: 10px; }
   .sr-summary .sr-summary-body {
     margin-top: 2em; }
     .sr-summary .sr-summary-body article {
@@ -331,7 +336,8 @@ footer.site-footer {
   background: rgba(235, 235, 235, 0.9);
   width: 100%;
   display: block;
-  padding: 20px; }
+  padding: 20px;
+  margin-top: 40px; }
   footer.site-footer ol {
     margin-bottom: 10px; }
     footer.site-footer ol li a {

@@ -1,8 +1,8 @@
 
 //colors:
-$orange:#ef5411;
-$green:#9fbf2c;
-$greenActive:#64950e;
+$orange:#eb5026;
+$green:#4b8919;
+$greenActive:#4b8919;
 $textGreenDark: #42501b;
 $textGreenLight:#727a5e;
 $textGrayDark: #666;
@@ -16,11 +16,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: $baseFontSize;
     padding-top:70px;
-    padding-bottom:120px;
+    //padding-bottom:120px; add back when footer is fixed to the bottom
 }
 @media (max-width: 768px) { 
     body{
-        padding-bottom:200px;
+        //padding-bottom:200px;
     }
 }
 a{
@@ -33,9 +33,11 @@ header{
     text-align: center;
     margin-top: 2em;
     p{
-        color:#42501b;
-        font-size: 1.5em;
+        color: #999;
+        font-size: 1.4em;
         margin: 0;
+        font-style: italic;
+        font-weight: normal;
     }
     h1{
         font-size: 4em;
@@ -70,27 +72,31 @@ header{
                          MAIN CONTENT*/
 
 .mainContent{
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 /*__________________________________________
                          CHOICE OF ENGINES*/
 .engines{
     display: block;
+    padding-top:2em;
     button{
         display: block;
         float: left;
         height: 45px;
         color: white;
         background-color:black;
-        border: none;
+        border: 1px solid #c3c3c2;
         width: 50%;
-        background-color: $green;
+        background-color: #dfdfdf;
+        color:#7a8572;
         font-size: 1.2em;
         cursor: pointer;
         width: 50%;
         &.active{
-            background-color: $greenActive;
+            background-color: $green;
+            border: 1x solid $green;
+            color:#f2f2f2;
         }
     }
 }
@@ -122,6 +128,9 @@ header{
         .fa-search{
             font-size: 2.5em;
             color: $orange;
+        }
+        &:focus{
+            outline: none;
         }
     }    
 }
@@ -172,18 +181,25 @@ nav
                 &:last-child{
                     border-right: none;
                 }
-            }
-            input[type="radio"]{
-                display: none;
-            }
-            input[checked="checked"] + label{
-                color: $green;
-                &:hover{
-                    cursor: default;
-                    color: $green;
-                    text-decoration: none;
+                a{
+                    color:$textGrayLight;
+                    &.active{
+                        color:$greenActive;
+                    }
                 }
+                
             }
+            // input[type="radio"]{
+            //     display: none;
+            // }
+            // input[checked="checked"] + label{
+            //     color: $green;
+            //     &:hover{
+            //         cursor: default;
+            //         color: $green;
+            //         text-decoration: none;
+            //     }
+            // }
             
         }
     }
@@ -302,6 +318,9 @@ ul.sr-sources{
     li{
         font-weight: normal;
         margin: 15px 0;
+        label{
+            font-weight: normal;
+        }
     }
     input[type="checkbox"]{
         margin-right:10px;
@@ -311,6 +330,9 @@ ul.sr-sources{
         font-style: italic;
         margin-left:26px;
         color:$textGrayLight;
+        i{
+            margin-left: 7px;
+        }
     }
 }
 .actions{
@@ -388,7 +410,7 @@ ul.sr-sources{
             font-size: 1em;
             color:#999;
             font-style: italic;
-            margin: 0 10px 0 0;
+            margin: 10px 10px 0 0;
             padding-right: 10px;
             border-right: 3px solid #CCC;
             line-height: 1.2em;
@@ -399,6 +421,7 @@ ul.sr-sources{
         }
         button{
             float: right;
+            margin-top:10px;
         }
         
     }
@@ -464,6 +487,7 @@ footer.site-footer{
     width: 100%;
     display: block;
     padding:20px;
+    margin-top: 40px; //temporary fix
 
     ol{
         margin-bottom:10px;

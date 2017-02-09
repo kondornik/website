@@ -105,6 +105,9 @@ header {
     .searchField .btn-search .fa-search {
       font-size: 2.5em; }
 
+.link-eol {
+  margin-left: 3px; }
+
 /* news only */
 .newsOnly {
   color: #42501b; }

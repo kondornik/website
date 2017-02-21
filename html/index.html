@@ -1,44 +1,126 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <link rel="stylesheet" href="../css/style.css">
-    
-    <title>sensebot Search</title>
-  </head>
-  <body>
-
-    <header>
-      <h1><span class="orange">Sense</span><span class="green">Bot</span></h1>
-      <p>The Search Engine that finds sense in a heap of Web pages</p>
-    </header>
-
-    <div class="mainContent">
-      <button type="button">SenseBot</button>
-      <button type="button">Bing</button>
-      <input type="text" name="search" value="What are you looking for?" placeholder="What are you looking for?">
-      <button type="button">Search</button>
-
-      <input type="checkbox" name="vehicle" value="Bike">search news only
-    <nav>
-      <ol>
-        <li>English</li>
-        <li>French</li>
-        <li>German</li>
-        <li>Spenish</li>
-      </ol>
-    </nav>
-    <nav>
-      <ol>
-        <li>About</li>
-        <li>In the news</li>
-        <li>Contact us</li>
-        <li>Terms of use</li>
-      </ol>
-    </nav>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../vendor/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  
+  <title>sensebot Search</title>
+</head>
+<body>
+  
+<nav class="main-nav navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-xs-12">
+            <ol>
+                <li class="active">Search</li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="samples.html">Samples</a></li>
+                <li><a href="semanticEngines.html">Semantic Engines</a></li>
+                <li><a href="news.html">In the news</a></li>
+            </ol>
+        </div>
     </div>
+  </div>
+</nav>
+
+
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="col-lg-12">
+          <h1><span class="orange">Sense</span><span class="green">Bot</span></h1>
+        </div>
+        <div class="col-lg-12">
+          <p> Search Engine that finds sense in a heap of Web pages</p>
+        </div>
+      </div>
+    </header>
+  </div><!--/.container-->
+
+    <div class="container mainContent">
+      <form>
+        <div class="row engines">
+          <div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10">
+            <button type="button" tabindex="1">SenseBot</button>
+            <button type="button" tabindex="2" class="active">Bing</button>
+          </div>
+        </div>
+        <div class="row searchField">
+          <div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10">
+
+            <div class="form-group">
+              <input type="text" name="search" value="" class="form-control" tabindex="3" placeholder="What are you looking for?">
+              <!--___CHANGE: changed button to link and i to span --><a class="btn-search" tabindex="4"><span class="fa fa-search" aria-hidden="true"></span></a><!--/___END CHANGE-->
+            </div>
+
+          </div><!--/.col-->
+        </div><!--/row-->
+
+        <div class="row">
+          <div class="col-lg-10 col-md-11">
+          <div class="newsOnly pull-right">
+            
+              <div class="checkbox">
+                <input type="checkbox" name="newsOnly" tabindex="5" value="newsOnly">
+                <label>news only</label>
+              </div>
+
+          </div><!--/.newsOnly-->
+
+          </div><!--/.col-->
+        </div><!--/row-->
+
+      </form>
+
+      <nav>
+        <ol class="languages">
+          <!--___CHANGE: list of radio buttons (changed from links) -->
+          <li><a href="#" id="lnkEnglish" onclick="UpdateLanguage('english');" class="active">English</a></li>
+
+          <li><a href="#" id="lnkEnglish">French</a></li>
+
+          <li><a href="#" id="lnkEnglish">French</a></li>
+
+          <li><a href="#" id="lnkEnglish">French</a></li>
+
+          <li><a href="#" id="lnkEnglish">French</a></li>
+
+          <li><a href="#" id="lnkEnglish">French</a></li>
+
+          <!--___END CHANGE -->
+        </ol>
+      </nav>
+    
+    
+    </div>
+</div><!--/.container-->
+
+    
+<nav class="navbar">
+  <footer class="site-footer">
+    <ol>
+      <li class="active">Search</li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">Semantic API</a></li>
+      <li><a href="#">Samples</a></li>
+      <li><a href="#">In the news</a></li>
+      <li><a href="#">Contact us</a></li>
+      <li><a href="#">Terms of use</a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    </ol>
+    <div class="copyright">Copyright © 2007-2017 Semantic Engines LLC. US Patents 9,218,414; 8,239,358. Patent Pending.
+    </div>
+  </footer>
+</nav>
+     
+    
+    
 </body>
 </html>
